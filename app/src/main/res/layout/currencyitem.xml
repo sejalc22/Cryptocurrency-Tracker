@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="7dp"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:id="@+id/currencyitem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/currencySymbol"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:padding="3dp"
+            android:text=""
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/currencyRate"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="18dp"
+            android:layout_toRightOf="@+id/currencySymbol"
+            android:padding="3dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/currencyName"
+            android:layout_width="269dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/currencySymbol"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp"
+            android:padding="3dp"
+            android:text=""
+            android:textSize="23dp" />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/currencyName"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="1h:"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/oneHour"
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/currencyName"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/currencyName"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="11dp"
+            android:layout_toRightOf="@id/oneHour"
+            android:text="24h:"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/twentyfourHours"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/currencyName"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/oneHour"
+            android:text=""
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/currencyName"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/twentyfourHours"
+            android:text="7d:"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/sevenDays"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/currencyName"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/twentyfourHours"
+            android:text=""
+            android:textAlignment="center" />
+
+        <ImageButton
+            android:id="@+id/setAlert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/currencyRate"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="300dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="-66dp"
+            app:srcCompat="@android:drawable/ic_popup_reminder" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
